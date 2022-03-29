@@ -28,11 +28,14 @@ namespace PrvniHra
             InitializeComponent();
             character1 = new Character("Petr");
             character2 = new Character("Pavel");
+            txt1.Text = character1.ToString();
+            txt2.Text = character2.ToString();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            character2.GetHit(character1.Damage);
+            txt1.Text = character2.ToString();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

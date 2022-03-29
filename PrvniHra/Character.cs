@@ -31,8 +31,15 @@ namespace PrvniHra
                 hp -= shield;
                 shield = 0;
             }
-                        
 
+        }
+        public override string ToString()
+        {
+            string text = "Name: " + Name + "\n";
+            text += "HP: " + HP + "\n";
+            text += "Shield: " + Shield + "\n";
+            text += "Damage: " + Damage + "\n";
+            return text;
         }
     }
 
