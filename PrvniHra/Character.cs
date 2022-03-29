@@ -28,11 +28,14 @@ namespace PrvniHra
             shield -= damage;
             if(shield < 0)
             {
-                hp -= shield;
+                hp += shield;
                 shield = 0;
             }
 
         }
+
+        public void
+
         public override string ToString()
         {
             string text = "Name: " + Name + "\n";
