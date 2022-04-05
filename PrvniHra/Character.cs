@@ -9,11 +9,13 @@ namespace PrvniHra
         private int shield;
         private int hp;
         private int damage;
+        public int skill;
 
         public string Name { get; }
         public int HP { get=> hp;  }
         public int Shield { get=>shield; }
         public int Damage { get=>damage;  }
+        public int Skill { get=> skill; }
 
         public Character(string name)
         {
@@ -34,7 +36,15 @@ namespace PrvniHra
 
         }
 
-        public void
+        public void Heal(int hp)
+        {
+            this.hp += 20;
+        }
+
+        public void SkillUp(int value)
+        {
+            skill += value;
+        }
 
         public override string ToString()
         {

@@ -40,7 +40,8 @@ namespace PrvniHra
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-         
+            character2.Heal(character2.HP);
+            txt2.Text = character2.ToString();
         }
     }
 }
